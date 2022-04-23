@@ -7,10 +7,10 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace WindowsFormsApp2.WinFormsKeypad
+namespace CustomWinFormControls.WinFormKeypad
 {
     public delegate void EventDelegate(object sender, EventArgs e);
-    class WinFormsKeypad : Panel
+    class WinFormKeypad : Panel
     {
         private string pin;
 
@@ -52,7 +52,7 @@ namespace WindowsFormsApp2.WinFormsKeypad
         private int charLimit;
         private string placeholder;
 
-        public WinFormsKeypad()
+        public WinFormKeypad()
         {
             pin = "";
             lblPin = new Label();
